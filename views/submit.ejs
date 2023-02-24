@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        
+        <script src="script.js" defer></script>
+
+        <link rel="stylesheet" href="style.css">
+        <title>Submit</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h2 id="logo">Random Image Generator</h2>
+                <a href="/"><button id="homepage-link">Browse random images</button></a>
+            </div>
+        </header>
+        <main>
+            <h2>Add a new image</h2>
+            <img src="" id="image" hidden="true">
+            <form method="post" action="/submit"> <!--add target: _blank for open in new tab-->
+                <div class="input-div">
+                    <label for="url">URL:</label>
+                    <input id="url" type="url" name="url" placeholder="https://unsplash.com/image69420">
+                </div>
+                <div class="input-div">
+                    <label for="submitter">Your name:</label>
+                    <input id="submitter" type="text" name="submitter" placeholder="Hugh Jass">
+                </div>
+                <button type="submit">Add image</button>
+            </form>
+            <p class="note">Side note: If you know the name of the photographer, please give him/her credit! Gracias 🌮</p>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+        <script src="script.js" defer></script>
+
+        <link rel="stylesheet" href="style.css">
+        <title>Homepage</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h2 id="logo">Random Image Generator</h2>
+                <a href="/submit"><button id="submit-page-link">Submit an image</button></a>
+            </div>
+        </header>
+        <main>
+            <p class="note">Heads up 🧢: We don't have a lot of images on our database yet, so you might see some repeat images.</p>
+            <img id="homepage-image" src="<%= randomUrl %>">
+            <p id="submitter">Image submitted by <%= randomSubmitter %></p>
+            <form id="new-image-form" method="get" action="/new-image">
+                <button id="new-image-btn" type="submit">New image</button>
+            </form>
+        </main>
+    </body>
+</html>

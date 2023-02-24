@@ -1,0 +1,84 @@
+body {
+    margin: 0px;
+}
+
+header {
+    display: block;
+    width: 100%;
+    background-color: lightblue;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+button {
+    height: 30px;
+    font-size: 14px;
+    font-weight: 900;
+    border: none;
+    border-radius: 3px;
+    background-color: lightgrey;
+}
+
+#submit-page-link {
+    background-color: #F8CF50;
+    color: #493d16;
+}
+
+#homepage-link {
+    background-color: #7BEB8B;
+    color: #086F17;
+}
+
+main {
+    text-align: center;
+}
+
+img {
+    height: 300px;
+    width: 500px;
+    object-fit: scale-down;
+    border: 0.5px solid black;
+    border-radius: 3px;
+}
+
+#homepage-image {
+    display: block;
+    margin: 10px auto;
+}
+
+input {
+    width: 250px;
+    height: 30px;
+    border: 0.5px solid;
+    border-radius: 3px;
+    padding: 0px 5px;
+    font-size: 14px;
+}
+
+.input-div {
+    width: 350px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note {
+    color: rgb(193, 193, 193);
+}
+
+@media screen and (max-width: 768px) {
+    header div {
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+
+    #logo {
+        margin: 15px;
+    }
+}
