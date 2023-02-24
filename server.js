@@ -37,7 +37,7 @@ app.get('/success', (req, res) => {
 
 //DATABASE CODE BELOW
 const password = encodeURIComponent(process.env.DB_PASSWORD);
-const uri = "mongodb+srv://shenyangyi:" + password + "@yyshen-personal-cluster.uy85gup.mongodb.net/test-database?retryWrites=true&w=majority";
+const uri = process.env.DB_URI_KEY;
 
 // Connect to the MongoDB database
 mongoose.connect(uri, {
